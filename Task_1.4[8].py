@@ -5,3 +5,14 @@
 # Примеры/Тесты:
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+
+n = int(input('Введите количество n = '))
+m = int(input('Введите количество m = '))
+k = int(input('Введите количество отломленных k долек = '))
+if k <= m * n and (k%n == 0 or k%m == 0):
+    print('yes')
+else:
+    print ('no')
+    
+print('yes' if k <= m * n and (k%n == 0 or k%m == 0) else 'no')
